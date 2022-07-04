@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
-import Task from "./components/Task/Task";
+import TaskList from "./components/TaskList/TaskList";
 
 const App = () => {
 
@@ -26,15 +26,7 @@ const App = () => {
 
     return (
         <div>
-            <Task description={tasks[0].description}
-                  date={tasks[0].date}
-            />
-            <Task description={tasks[1].description}
-                  date={tasks[1].date}
-            />
-            <Task description={tasks[2].description}
-                  date={tasks[2].date}
-            />
+            <TaskList items={tasks}/>
         </div>
     )
 }
